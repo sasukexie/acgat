@@ -10,7 +10,7 @@ docs/build/
 wandb/*
 log/
 log_tensorboard/
-#dataset/
+dataset/
 .ipynb_checkpoints/
 tests/
 *.bk*.py
