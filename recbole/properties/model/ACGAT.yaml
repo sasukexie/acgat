@@ -1,0 +1,15 @@
+embedding_size: 64              # (int) The embedding size of users and items.
+n_layers: 2                     # (int) The number of layers in GCN.
+reg_weight: 1e-05               # (float) The L2 regularization weight.
+
+dropout: 0.1            # *,[0.1-0.9], ml-100k 0.1
+g_weight: 0.9           # *,[0.1-0.9], ml-100k 0.9, other 0.5
+cnn_kernel_size: 2      # *,[2-6], 卷积核数量, 捕获局部三维模式, ml-100k 2
+cnn_channels: 64        # *,[64,128], cnn通道数
+
+n_heads: 2, # 2
+dropout1: 0.1, # *,[0.1-0.9], ml-100k 0.5, other 0.5
+negative_slope: 0.2, # 0.2
+temperature: 0.5,
+cl_weight: 1,
+ed_rate: 0.1,
